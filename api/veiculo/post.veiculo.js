@@ -11,7 +11,7 @@ module.exports = postVeiculo = async (req, res) => {
         errors.push('Placa não informada.')
     } else {
         if (!placa.match(placaRegex)) {
-            errors.push('Formato da placa não inválido.')
+            errors.push('Formato da placa inválido.')
         }
     }
 

@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node --max-old-space-size=4096 index"
+        "start": "node --max-old-space-size=4096 index",
+        "dev": "nodemon"
     },
     "author": "",
     "license": "ISC",

@@ -24,4 +24,7 @@ module.exports = function (server) {
 
     //Rota para deletar um veiculo
     serverV1.delete('/deletar-veiculo/:placa', controllers.deleteVeiculo)
+
+    //Rota para adicionar uma revisão a um veiculo
+    serverV1.post('/adicionar-revisao/:placa', controllers.postRevisao)
 }

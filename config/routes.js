@@ -12,4 +12,7 @@ module.exports = function (server) {
 
     //Rota para criar um veiculo
     serverV1.post('/novo-veiculo', controllers.postVeiculo)
+
+    //Rota que busca um veiculo com uma placa
+    serverV1.get('/encontrar-veiculo/:placa', controllers.getVeiculo)
 }

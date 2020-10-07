@@ -4,5 +4,6 @@ module.exports = {
     getVeiculos: require('./veiculo/get.veiculos'),
     putVeiculo: require('./veiculo/put.veiculo.id'),
     deleteVeiculo: require('./veiculo/delete.veiculo.id'),
-    postRevisao: require('./veiculo/post.revisao.id')
+    postRevisao: require('./veiculo/post.revisao.id'),
+    getValorRevisoes: require('./veiculo/get.valorRevisoes')
 }

@@ -27,4 +27,7 @@ module.exports = function (server) {
 
     //Rota para adicionar uma revisão a um veiculo
     serverV1.post('/adicionar-revisao/:placa', controllers.postRevisao)
+
+    //Rota para buscar os valores das revisões
+    serverV1.get('/buscar-valor-revisao', controllers.getValorRevisoes)
 }

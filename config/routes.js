@@ -21,4 +21,7 @@ module.exports = function (server) {
 
     //Rota para alterar um veiculo
     serverV1.put('/atualizar-veiculo/:placa', controllers.putVeiculo)
+
+    //Rota para deletar um veiculo
+    serverV1.delete('/deletar-veiculo/:placa', controllers.deleteVeiculo)
 }

@@ -61,7 +61,7 @@ module.exports = postVeiculo = async (req, res) => {
     })
 
     try {
-        novoVeiculo.save()
+        await novoVeiculo.save()
     } catch (e) {
         returnMessages.errorDatabase(res)
         return

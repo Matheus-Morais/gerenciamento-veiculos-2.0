@@ -9,7 +9,7 @@ const veiculoSchema = mongoose.Schema({
     ano_fabricacao: { type: Number, required: true },
     data_cadastro: { type: Date, default: Date.now },
     revisoes: [{
-        data_revisao: { type: Date },
+        data_revisao: { type: Date, default: Date.now },
         valor: { type: Number, min: 0 }
     }]
 })

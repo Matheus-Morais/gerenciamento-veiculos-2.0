@@ -2,7 +2,7 @@ const veiculo = require('../../config/database/veiculo')
 const returnMessages = require('../../config/return.messages')
 
 module.exports = postRevisao = async (req, res) => {
-    const placaIdenticador = req.params.placa.toUpperCase()
+    const placaIdenticador = req.params.placa
     let veiculoEncontrado
 
     //Se não for mandado a placa, é retornado erro
@@ -12,7 +12,7 @@ module.exports = postRevisao = async (req, res) => {
     }
 
     try {
-        veiculoEncontrado = await veiculo.findOne({ "placa": placaIdenticador })
+        veiculoEncontrado = await veiculo.findOne({ "placa": placaIdenticador.toUpperCase() })
     } catch (e) {
         returnMessages.errorDatabase(res)
         return

@@ -15,4 +15,7 @@ module.exports = function (server) {
 
     //Rota que busca um veiculo com uma placa
     serverV1.get('/encontrar-veiculo/:placa', controllers.getVeiculo)
+
+    //Rota que busca todos os veiculos
+    serverV1.get('/buscar-veiculos', controllers.getVeiculos)
 }

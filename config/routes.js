@@ -18,4 +18,7 @@ module.exports = function (server) {
 
     //Rota que busca todos os veiculos
     serverV1.get('/buscar-veiculos', controllers.getVeiculos)
+
+    //Rota para alterar um veiculo
+    serverV1.put('/atualizar-veiculo/:placa', controllers.putVeiculo)
 }

@@ -1,4 +1,5 @@
 const express = require('express')
+const controllers = require('../api/index')
 
 module.exports = function (server) {
     const serverV1 = express.Router()
@@ -8,4 +9,7 @@ module.exports = function (server) {
         res.type('text/plain')
         res.send(`API - v1`)
     })
+
+    //Rota para criar um veiculo
+    serverV1.post('/novo-veiculo', controllers.postVeiculo)
 }
